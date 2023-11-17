@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>While Dom</title>
+</head>
+<body>
+  <h1>
+    Exemplo de loop com DOM
+  </h1>
+
+  <ul id="lista">
+    
+  </ul>
+  <button onclick="iniciarloop()">Iniciar loop</button>
+
+  <script>
+    let contador = 1;
+    let botao = false;
+
+    function iniciarloop(){
+      botao = true;
+      while (contador <=10 && botao){
+        let lista = document.getElementById('lista')
+      
+        let novoitem = document.createElement("li")
+
+        novoitem.appendChild(document.createTextNode('Elemento nó da lista' + contador))
+        lista.appendChild(novoitem)
+        contador++;
+      }
+    }
+  </script>
+</body>
+</html>

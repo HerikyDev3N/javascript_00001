@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#meuBotao {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#meuBotao.clicado {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  line-height: 100px;
+  font-size: 14px;
+}
+
+#meuBotao.saiu {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  line-height: 100px;
+  font-size: 14px;
+}
+
+#imagemPular {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  display: none; /* Inicialmente oculta */
+}
